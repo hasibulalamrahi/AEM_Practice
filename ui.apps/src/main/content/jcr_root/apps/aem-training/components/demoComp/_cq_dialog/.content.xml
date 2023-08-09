@@ -23,8 +23,19 @@
                             name="./number"
                             min="0"
                             max="10"/>
+
+                    <content
+                            jcr:primaryType="cq:Widget"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Select Option"
+                            name="./selectedOption"
+                            emptyText="Select an option..."
+                            value="Option 1,option 2"
+                            options="[A,B,C,D]"
+                    />
                 </items>
             </column>
         </items>
     </content>
 </jcr:root>
+

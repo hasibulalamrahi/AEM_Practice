@@ -14,7 +14,9 @@
         message:   '[data-cmp-hook-helloworld="model"]'
     };
 
-    function HelloWorld(config) {
+    function HelloWorld(
+
+    ) {
 
         function init(config) {
             // Best practice:
