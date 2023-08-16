@@ -1,3 +1,16 @@
+<div data-sly-use.helloWorld="com.aem.training.core.models.HelloWorldModel">
+    <sly data-sly-list.contact="${helloWorld.contact}">
+        <div>${contact.title}</div>
+        <div>${contact.link}</div>
+        <sly data-sly-test="${contact.title=='a'}">
+            <h1 class="condition-header-helloworld">Condition triggered!</h1>
+        </sly>
+        <sly data-sly-test="${contact.title=='b'}">
+            <h1 class="condition-header-helloworld-g">Condition triggered!</h1>
+        </sly>
+    </sly>
+    <div>Hello###</div>
+</div>
 <sly data-sly-test="${wcmmode.edit}">
     <div class="component-header"><span>${component.title}</span></div>
 </sly>
@@ -13,3 +26,5 @@
 <div class="data-api">
 
 </div>
+
+
