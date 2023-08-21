@@ -1,0 +1,21 @@
+<h1>Author Component</h1>
+
+
+<div data-sly-use.author="com.aem.training.core.models.AuthorModel">
+<div>First Name: ${author.firstName}</div>
+<div>Last Name: ${author.lastName}</div>
+<div>Age: ${author.age}</div>
+    <div>Date of Birth: ${author.date}</div>
+    <div>Button Type: ${author.buttonType}</div>
+    <div>Author Type: ${author.isAuthor}</div>
+    <div>Active Author Status: ${author.IsActiveAuthor}</div>
+    <div>Number of Publications of Author: ${author.publicationNo}</div>
+    <div>
+        <div>Novels : ${author.novels}</div>
+        <div>Poems : ${author.poems}</div>
+    </div>
+    <div>
+        <h1>Image Components</h1>
+        <img src="${author.heroBannerBackgroundPosterImage}" />
+    </div>
+</div>
